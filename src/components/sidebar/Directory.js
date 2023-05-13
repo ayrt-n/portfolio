@@ -12,11 +12,11 @@ function Directroy({ name, children, ...props }) {
   const marginLeft = `${(level + 1) * 10}px`
 
   const defaultClasses = "w-full py-1"
-  const conditionalClasses = level === 0 ? "bg-dark-500 font-bold" : "hover:bg-dark-400 focus:bg-dark-300"
+  const conditionalClasses = level === 0 ? "bg-dark-500 font-bold uppercase" : "hover:bg-dark-400 focus:bg-dark-300 font-medium"
   const mergedClasses = classNames(defaultClasses, conditionalClasses);
 
   return (
-    <Disclosure as="div" className="w-full h-auto" defaultOpen={true} {...props}>
+    <Disclosure as="div" className="w-full h-auto cursor-pointer" defaultOpen={true} {...props}>
       {({ open }) => (
         <>
           <Disclosure.Button className={mergedClasses} style={{paddingLeft: paddingLeft}}>
