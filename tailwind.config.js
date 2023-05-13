@@ -13,6 +13,7 @@ module.exports = {
         'dark-300': '#44475A',
         'dark-200': '#505262',
         'dark-100': '#5A6795',
+        'comment': '#6272a4',
         'white': '#F8F8F2',
         'white-50a': 'hsla(0,0%,100%,.5)',
         'blue': '#8be9fd',
@@ -42,14 +43,15 @@ module.exports = {
         'primaryBorder': '#0d518f',
       },
       fontFamily: {
-        'mono': ['Fira Mono', 'Courier New']
+        'mono': ['Fira Mono', 'Courier New'],
+        'sans': ['Roboto', 'Arial', 'sans-serif']
       },
       gridTemplateColumns: {
-        'dashboard': '300px auto'
+        'dashboard': 'min-content auto',
       },
       gridTemplateRows: {
         'dashboard': '50px auto'
-      }
+      },
     },
   },
   plugins: [
