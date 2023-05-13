@@ -1,35 +1,39 @@
-import { useEffect, useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import TabContext from './TabContext';
-import { useNavigate } from 'react-router-dom';
 
 function TabProvider({ initialTabs, children }) {
-  const navigate = useNavigate();
   const [tabHistory, setTabHistory] = useState(initialTabs);
   const [tabList, setTabList] = useState(initialTabs);
 
-  const addTab = (tab) => {
-    if (!tabList.find(t => (t.pathname === tab.pathname))) {
+  const addTab = useCallback((tab) => {
+    if (!tabList.find(t => (t.name === tab.name))) {
       setTabList(prev => ([...prev, tab]));
     }
 
     switchTabs(tab);
-  };
+  }, [tabList]);
 
   const removeTab = (tab) => {
-    setTabList(prev => (prev.filter(t => t.pathname !== tab.pathname)));
-    setTabHistory(prev => (prev.filter(t => t.pathname !== tab.pathname)));
+    setTabList(prev => (prev.filter(t => t.name !== tab.name)));
+    setTabHistory(prev => (prev.filter(t => t.name !== tab.name)));
   };
 
   const switchTabs = (tab) => {
-    setTabHistory(prev => ([tab, ...prev.filter(t => t.pathname !== tab.pathname)]));
+    setTabHistory(prev => ([tab, ...prev.filter(t => t.name !== tab.name)]));
   };
 
-  useEffect(() => {
-    tabHistory[0] ? navigate(tabHistory[0]) : navigate('/')
-  }, [navigate, tabHistory]);
+  const value = useMemo(() => (
+    {
+      current: tabHistory[0],
+      tabList,
+      addTab,
+      removeTab,
+      switchTabs
+    }
+  ), [tabList, tabHistory, addTab])
 
   return (
-    <TabContext.Provider value={{tabList, addTab, removeTab, switchTabs}}>
+    <TabContext.Provider value={value}>
       {children}
     </TabContext.Provider>
   );
