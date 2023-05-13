@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
   margin: 0;
@@ -12,4 +13,17 @@ body {
 body {
   background: #282A36;
   color: #F8F8F2;
+}
+
+::selection {
+  background: #505262;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.animate-blink {
+  animation: blink 1s step-start 0s infinite;
 }
