@@ -1,13 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
-import { useLocation } from 'react-router-dom';
 import File from '../File';
 import useTabContext from '../../hooks/useTabContext';
 
 function Tab({ tab }) {
-  const location = useLocation();
-  const selected = location.pathname === tab.pathname;
   const tabs = useTabContext();
+  const selected = tabs.current.name === tab.name;
 
   const defaultClasses = "relative min-w-[175px] px-4 mr-[2px] h-full flex justify-center items-center border-t-2 border-transparent";
   const selectedClasses = { 'border-t-pink': selected, 'bg-dark-500': selected, 'bg-dark-600': !selected };

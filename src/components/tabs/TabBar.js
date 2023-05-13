@@ -8,12 +8,9 @@ function TabBar() {
   if (tabs.tabList.length < 1) return;
 
   return (
-    <div className="bg-dark-700 flex text-lg h-[50px] grow">
+    <div className="bg-dark-700 flex text-lg h-[50px] grow select-none sticky top-0">
       <div className="h-full flex">
-        {tabs.tabList.map((tab) => (
-            <Tab tab={tab} key={tab.pathname} />
-          ))
-        }
+        {tabs.tabList.map((tab) => (<Tab tab={tab} key={tab.name} />))}
       </div>
     </div>
   )
