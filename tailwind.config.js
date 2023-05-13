@@ -47,7 +47,7 @@ module.exports = {
         'sans': ['Roboto', 'Arial', 'sans-serif']
       },
       gridTemplateColumns: {
-        'dashboard': 'min-content auto',
+        'dashboard': 'min-content 1fr',
       },
       gridTemplateRows: {
         'dashboard': '50px auto'
