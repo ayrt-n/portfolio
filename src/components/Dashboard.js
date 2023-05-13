@@ -6,6 +6,7 @@ import About from './About';
 import Contact from './Contact';
 import NoTabs from './NoTabs';
 import useTabContext from '../hooks/useTabContext';
+import Portfolio from './Portfolio';
 
 function Dashboard() {
   const tabs = useTabContext();
@@ -22,11 +23,11 @@ function Dashboard() {
             name: 'components',
             type: 'folder',
             children: [
-              { name: 'CoolShit', type: 'file', extension: 'js', component: <Home /> },
+              { name: 'About', type: 'file', extension: 'js', component: <About /> },
+              { name: 'Portfolio', type: 'file', extension: 'js', component: <Portfolio /> },
             ]
           },
           { name: 'Home', type: 'file', extension: 'js', component: <Home /> },
-          { name: 'About', type: 'file', extension: 'js', component: <About /> },
         ]
       },
       { name: '', type: 'file', extension: 'gitignore', component: <></> },
