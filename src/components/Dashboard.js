@@ -1,22 +1,46 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Sidebar from './sidebar/Sidebar';
 import TabBar from './tabs/TabBar';
-import { Outlet } from 'react-router-dom';
-import TabProvider from '../contexts/tab/TabProvider';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+import NoTabs from './NoTabs';
+import useTabContext from '../hooks/useTabContext';
 
 function Dashboard() {
-  const [tabs] = useState([
-    {name: 'Home', extension: "js", pathname: "/home"},
-    {name: 'About', extension: "js", pathname: "/about"},
-  ]);
+  const tabs = useTabContext();
+
+  const directory = [{
+    name: 'ayrton_parkinson_portfolio',
+    type: 'folder',
+    children: [
+      {
+        name: 'src',
+        type: 'folder',
+        children: [
+          {
+            name: 'components',
+            type: 'folder',
+            children: [
+              { name: 'CoolShit', type: 'file', extension: 'js', component: <Home /> },
+            ]
+          },
+          { name: 'Home', type: 'file', extension: 'js', component: <Home /> },
+          { name: 'About', type: 'file', extension: 'js', component: <About /> },
+        ]
+      },
+      { name: '', type: 'file', extension: 'gitignore', component: <></> },
+      { name: 'Contact', type: 'file', extension: 'md', component: <Contact /> },
+    ]
+  }];
 
   return (
     <div className="font-sans grid grid-rows-dashboard grid-cols-dashboard min-h-screen">
-      <TabProvider initialTabs={tabs}>
-        <Sidebar />
-        <TabBar />
-      </TabProvider>
-      <Outlet />
+      <Sidebar directory={directory} />
+      <TabBar />
+      <div className="font-mono pt-[32px] px-9">
+        {tabs.current ? tabs.current.component : <NoTabs />}
+      </div>
     </div>
   );
 }
