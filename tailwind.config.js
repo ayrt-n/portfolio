@@ -17,6 +17,7 @@ module.exports = {
         'white': '#F8F8F2',
         'white-50a': 'hsla(0,0%,100%,.5)',
         'blue': '#8be9fd',
+        'blue-highlight': 'rgba(139, 233, 253, 0.25)',
         'lightGreen': '#b1ffc5',
         'green': '#50fa7b',
         'red': '#ff5555',
