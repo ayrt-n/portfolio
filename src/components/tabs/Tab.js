@@ -13,7 +13,7 @@ function Tab({ tab }) {
 
   return (
     <span className={mergedClasses}>
-      <button onClick={() => tabs.switchTabs(tab)} className="absolute top-0 left-0 bottom-0 right-0" />
+      <button onClick={() => tabs.switchTabs(tab)} className="absolute top-0 left-0 bottom-0 right-0 h-full w-full" />
       <File name={tab.name} extension={tab.extension} />
       <button onClick={() => tabs.removeTab(tab)} className="z-10 ml-2 rounded-md p-1 hover:bg-dark-400 active:bg-dark-300">
         <svg className="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
