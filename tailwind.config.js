@@ -20,7 +20,9 @@ module.exports = {
         'blue-highlight': 'rgba(139, 233, 253, 0.25)',
         'lightGreen': '#b1ffc5',
         'green': '#50fa7b',
+        'green-highlight': 'rgba(80, 250, 123, 0.25)',
         'red': '#ff5555',
+        'red-highlight': 'rgba(255, 85, 85, 0.25)',
         'lightRed': '#ff6a6c',
         'darkRed': '#e83538',
         'orange': '#ffb86c',
@@ -49,6 +51,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         'dashboard': 'min-content 1fr',
+        'dashboardMobile': '1fr'
       },
       gridTemplateRows: {
         'dashboard': '50px auto'
