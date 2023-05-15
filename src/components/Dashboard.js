@@ -36,12 +36,17 @@ function Dashboard() {
   }];
 
   return (
-    <div className="font-sans grid grid-rows-dashboard grid-cols-dashboard min-h-screen">
+    <div className="font-sans grid grid-rows-dashboard grid-cols-dashboard h-screen max-w-screen">
       <Sidebar directory={directory} />
       <TabBar />
-      <div className="font-mono pt-[32px] px-9">
-        {tabs.current ? tabs.current.component : <NoTabs />}
-      </div>
+      {tabs.current ?
+        <div className="font-mono pt-[32px] px-9 overflow-y-auto max-h-screen">
+          <div className="max-w-[1200px]">
+            {tabs.current.component}
+          </div>
+        </div> :
+        <NoTabs />
+      }
     </div>
   );
 }
