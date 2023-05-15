@@ -4,7 +4,7 @@ import MarkdownHeader from '../MarkdownHeader';
 function ProjectText({ title, technologies, description, githubLink, liveLink }) {
   return (
     <div className="max-w-[400px]">
-      <MarkdownHeader headingLevel="2" text={title} className="text-3xl mb-3" />
+      <MarkdownHeader headingLevel="2" text={title} className="text-xl md:text-3xl mb-3" />
       <p className="text-comment mb-3">{technologies}</p>
       <p className="mb-3">{description}</p>
       <div className="flex">

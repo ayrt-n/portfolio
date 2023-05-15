@@ -1,12 +1,12 @@
 import React from 'react';
+import MarkdownHeader from './MarkdownHeader';
+import LineBreak from './LineBreak';
 
 function Contact() {
   return (
     <div>
-      <h1 className="text-5xl text-purple">
-       # Contact
-      </h1>
-      <hr className="border-dark-200 my-3" />
+      <MarkdownHeader headingLevel="1" text="Contact" className="text-3xl md:text-5xl" />
+      <LineBreak />
     </div>
   )
 }

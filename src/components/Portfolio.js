@@ -9,7 +9,7 @@ function Portfolio() {
   return (
     <div>
       <div className="mb-8">
-        <MarkdownHeader headingLevel="1" text="Personal Projects" className="text-5xl" />
+        <MarkdownHeader headingLevel="1" text="Personal Projects" className="text-3xl md:text-5xl" />
         <LineBreak />
         <p>
           Below is a selection of some recent and larger projects that I have worked on. For more detail on everything that I have done, as well as what I am currently working on, check out my GitHub at <a className="text-blue hover:bg-blue-highlight underline" href="https://github.com/ayrt-n" target="_blank" rel="noreferrer">https://github.com/ayrt-n</a>
