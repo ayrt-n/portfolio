@@ -23,8 +23,7 @@ body {
 /* Scroll bar */
 /* Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: black white;
+  scrollbar-color: rgba(256, 256, 256, 0.2) var(--dark-500);
 }
 
 /* Chrome, Edge, and Safari */
