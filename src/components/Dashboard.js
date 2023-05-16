@@ -42,7 +42,7 @@ function Dashboard() {
   }];
 
   return (
-    <div className="font-sans h-screen max-w-screen flex">
+    <div className="font-sans h-screen max-w-screen flex overflow-y-hidden">
       {/* Desktop Sidebar */}
       <div className="md:block hidden bg-dark-600">
         <button onClick={toggleSidebar} className="min-h-[50px] min-w-[50px] bg-dark-600 flex items-center px-3">
@@ -64,7 +64,7 @@ function Dashboard() {
       <div className="grow">
         <Navbar toggleDrawer={toggleDrawer} />
         {tabs.current ?
-          <div className="font-mono pt-[32px] px-4 md:px-9 overflow-y-auto max-h-screen">
+          <div className="font-mono py-[32px] px-4 md:px-9 overflow-y-auto max-h-screen">
             <div className="max-w-[1200px]">
               {tabs.current.component}
             </div>
