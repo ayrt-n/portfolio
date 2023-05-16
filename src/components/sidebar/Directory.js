@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { LevelContext } from '../../contexts/level/LevelContext';
 import DirectoryList from './DirectoryList';
 
-function Directroy({ directory }) {
+function Directroy({ directory, callback }) {
   const level = useLevelContent();
 
   const paddingLeft = `${level * 10}px`
@@ -29,7 +29,7 @@ function Directroy({ directory }) {
           <Disclosure.Panel className="relative">
             <LevelContext.Provider value={level + 1}>
               {level > 0 && <div className="absolute z-10 border-l border-l-transparent h-full group-hover:border-l-dark-200 transition-colors" style={{marginLeft: marginLeft}} />}
-              <DirectoryList directory={directory.children} />
+              <DirectoryList directory={directory.children} callback={callback} />
             </LevelContext.Provider>
           </Disclosure.Panel>
         </>
