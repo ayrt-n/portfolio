@@ -49,13 +49,6 @@ module.exports = {
         'mono': ['Fira Mono', 'Courier New'],
         'sans': ['Roboto', 'Arial', 'sans-serif']
       },
-      gridTemplateColumns: {
-        'dashboard': 'min-content 1fr',
-        'dashboardMobile': '1fr'
-      },
-      gridTemplateRows: {
-        'dashboard': '50px auto'
-      },
     },
   },
   plugins: [
