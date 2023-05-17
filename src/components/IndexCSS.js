@@ -15,7 +15,7 @@ function IndexCSS() {
       </Section>
 
       <Section>
-        <Comment className="text-2xl">Helpful styling links and sources!</Comment>
+        <Comment className=" text-lg md:text-2xl">Helpful styling links and sources!</Comment>
       </Section>
 
       <Section>
