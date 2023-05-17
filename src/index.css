@@ -1,8 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url(https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);
+
+@font-face {
+  font-family: 'Menlo';
+  src: local('Menlo-Regular'), url(./assets/fonts/Menlo-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF-Pro-Display-Regular'), url(./assets/fonts/SF-Pro-Display-Regular.otf);
+  font-weight: 100 400;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF-Pro-Display-Medium'), url(./assets/fonts/SF-Pro-Display-Medium.otf);
+  font-weight: 500 600;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF-Pro-Display-Bold'), url(./assets/fonts/SF-Pro-Display-Bold.otf);
+  font-weight: 700 1000;
+}
 
 :root {
   --dark-700: #191A21;

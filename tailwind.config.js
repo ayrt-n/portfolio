@@ -46,8 +46,8 @@ module.exports = {
         'primaryBorder': '#0d518f',
       },
       fontFamily: {
-        'mono': ['Fira Mono', 'Courier New'],
-        'sans': ['Roboto', 'Arial', 'sans-serif']
+        'mono': ['Menlo', 'Fira Mono', 'Courier New'],
+        'sans': ['SF Pro Display', 'Roboto', 'Arial', 'sans-serif']
       },
     },
   },
