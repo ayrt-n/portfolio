@@ -10,9 +10,6 @@ function Contact() {
       <Section>
         <MarkdownHeader headingLevel="1" text="Contact" className="text-3xl md:text-5xl" />
         <LineBreak />
-      </Section>
-
-      <Section>
         <Text>
           If you're interested in reaching out and want to chat, please just reach out via any of the links below!
         </Text>
