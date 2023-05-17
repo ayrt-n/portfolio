@@ -1,45 +1,18 @@
 import React from 'react';
 import Sidebar from './sidebar/Sidebar';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
 import NoTabs from './NoTabs';
 import useTabContext from '../hooks/useTabContext';
-import Portfolio from './Portfolio';
 import Drawer from './sidebar/Drawer';
 import { useToggle } from '../hooks/useToggle';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 import Navbar from './Navbar';
 import DirectoryList from './sidebar/DirectoryList';
+import { directory } from '../utils/directory';
 
 function Dashboard() {
   const tabs = useTabContext();
   const [drawerOpen, toggleDrawer] = useToggle(false);
   const [sidebarOpen, toggleSidebar] = useToggle(true);
-
-  const directory = [{
-    name: 'ayrton_parkinson_portfolio',
-    type: 'folder',
-    children: [
-      {
-        name: 'src',
-        type: 'folder',
-        children: [
-          {
-            name: 'components',
-            type: 'folder',
-            children: [
-              { name: 'About', type: 'file', extension: 'js', component: <About /> },
-              { name: 'Portfolio', type: 'file', extension: 'js', component: <Portfolio /> },
-            ]
-          },
-          { name: 'Home', type: 'file', extension: 'js', component: <Home /> },
-        ]
-      },
-      { name: '', type: 'file', extension: 'gitignore', component: <></> },
-      { name: 'Contact', type: 'file', extension: 'md', component: <Contact /> },
-    ]
-  }];
 
   return (
     <div className="font-sans h-screen max-w-screen flex overflow-y-hidden">
