@@ -3,6 +3,7 @@ import MarkdownHeader from '../MarkdownHeader';
 import Section from '../Section';
 import Comment from '../Comment';
 import Text from '../Text';
+import MarkdownButton from '../MarkdownButton';
 
 function ProjectText({ title, technologies, description, githubLink, liveLink }) {
   return (
@@ -11,8 +12,16 @@ function ProjectText({ title, technologies, description, githubLink, liveLink })
       <Comment>{technologies}</Comment>
       <Text>{description}</Text>
       <div className="flex">
-        {githubLink && <a href={githubLink} target="_blank" rel="noreferrer" className="text-green hover:bg-green-highlight font-bold mr-4">[GitHub]</a>}
-        {liveLink && <a href={liveLink} target="_blank" rel="noreferrer" className="text-green hover:bg-green-highlight font-bold">[Live Preview]</a>}
+        {githubLink &&
+          <MarkdownButton as="a" href={githubLink} target="_blank" rel="noreferrer" className="mr-4">
+            [GitHub]
+          </MarkdownButton>
+        }
+        {liveLink &&
+          <MarkdownButton as="a" href={liveLink} target="_blank" rel="noreferrer">
+            [Live Preview]
+          </MarkdownButton>
+        }
       </div>
     </Section>
   );
