@@ -3,6 +3,8 @@ import MarkdownHeader from './MarkdownHeader';
 import LineBreak from './LineBreak';
 import Section from './Section';
 import Text from './Text';
+import MarkdownButton from './MarkdownButton';
+import ResumePDF from '../assets/documents/Ayrton_Parkinson_CV.pdf';
 
 function About() {
   return (
@@ -17,7 +19,9 @@ function About() {
       </Section>
 
       <Section>
-        <button className="font-bold text-green hover:bg-green-highlight">[Download Resume]</button>
+        <MarkdownButton as="a" href={ResumePDF} target="_blank" rel="noreferrer">
+          [Download Resume]
+        </MarkdownButton>
       </Section>
 
       <Section>
