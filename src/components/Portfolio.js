@@ -3,7 +3,7 @@ import MarkdownHeader from './MarkdownHeader';
 import LineBreak from './LineBreak';
 import Text from './Text';
 import Section from './Section';
-import MarkdownLink from './MarkdownLink';
+import Link from './Link';
 import Project from './portfolio/Project';
 import ProjectText from './portfolio/ProjectText';
 import ProjectPreview from './portfolio/ProjectPreview';
@@ -15,7 +15,7 @@ function Portfolio() {
         <MarkdownHeader headingLevel="1" text="Personal Projects" className="text-3xl md:text-5xl" />
         <LineBreak />
         <Text>
-          Below is a selection of some recent and larger projects that I have worked on. For more detail on everything that I have done, as well as what I am currently working on, check out my GitHub at <MarkdownLink href="https://github.com/ayrt-n">https://github.com/ayrt-n</MarkdownLink>
+          Below is a selection of some recent and larger projects that I have worked on. For more detail on everything that I have done, as well as what I am currently working on, check out my GitHub at <Link targetBlank href="https://github.com/ayrt-n">https://github.com/ayrt-n</Link>
         </Text>
       </Section>
 

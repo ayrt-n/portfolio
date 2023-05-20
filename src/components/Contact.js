@@ -3,7 +3,7 @@ import MarkdownHeader from './MarkdownHeader';
 import LineBreak from './LineBreak';
 import Section from './Section';
 import Text from './Text';
-import MarkdownLink from './MarkdownLink';
+import Link from './Link';
 
 function Contact() {
   return (
@@ -18,13 +18,13 @@ function Contact() {
 
       <Section>
         <Text className="text-lg">
-          [<span className="text-pink">Email</span>] (<MarkdownLink href="mailto:ayrton.parkinson1@gmail.com">mailto:ayrton.parkinson1@gmail.com</MarkdownLink>)
+          [<span className="text-pink">Email</span>] (<Link targetBlank href="mailto:ayrton.parkinson1@gmail.com">mailto:ayrton.parkinson1@gmail.com</Link>)
         </Text>
         <Text className="text-lg">
-          [<span className="text-pink">Github</span>] (<MarkdownLink href="https://github.com/ayrt-n">https://github.com/ayrt-n</MarkdownLink>)
+          [<span className="text-pink">Github</span>] (<Link targetBlank href="https://github.com/ayrt-n">https://github.com/ayrt-n</Link>)
         </Text>
         <Text className="text-lg">
-          [<span className="text-pink">LinkedIn</span>] (<MarkdownLink href="https://www.linkedin.com/in/ayrton-parkinson-ab6015ba/">https://www.linkedin.com/in/ayrton-parkinson-ab6015ba/</MarkdownLink>)
+          [<span className="text-pink">LinkedIn</span>] (<Link targetBlank href="https://www.linkedin.com/in/ayrton-parkinson-ab6015ba/">https://www.linkedin.com/in/ayrton-parkinson-ab6015ba/</Link>)
         </Text>
       </Section>
     </div>
