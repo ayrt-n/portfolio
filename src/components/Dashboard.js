@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Sidebar from './sidebar/Sidebar';
 import NoTabs from './NoTabs';
 import useTabContext from '../hooks/useTabContext';
@@ -8,11 +8,30 @@ import { Bars3Icon } from '@heroicons/react/20/solid';
 import Navbar from './Navbar';
 import DirectoryList from './sidebar/DirectoryList';
 import { directory } from '../utils/directory';
+import JSConfetti from 'js-confetti';
 
 function Dashboard() {
   const tabs = useTabContext();
   const [drawerOpen, toggleDrawer] = useToggle(false);
   const [sidebarOpen, toggleSidebar] = useToggle(true);
+
+  useEffect(() => {
+    const jsConfetti = new JSConfetti();
+
+    const keyboardShortcuts = (e) => {
+      if (e.key === 'b' && e.metaKey) {
+        window.innerWidth < 768 ? toggleDrawer() : toggleSidebar();
+      }
+
+      if (e.key === 'k' && e.metaKey && e.shiftKey) {
+        jsConfetti.addConfetti({ confettiColors: ['#8be9fd', '#50fa7b', '#ff5555', 'pink', 'purple'] })
+      }
+    };
+
+    window.addEventListener('keydown', keyboardShortcuts);
+
+    return window.addEventListener('keydown', keyboardShortcuts);
+  }, [toggleSidebar, toggleDrawer]);
 
   return (
     <div className="font-sans h-screen max-w-screen flex overflow-y-hidden">
