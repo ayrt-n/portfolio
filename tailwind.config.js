@@ -49,6 +49,9 @@ module.exports = {
         'mono': ['Menlo', 'Fira Mono', 'Courier New'],
         'sans': ['SF Pro Display', 'Roboto', 'Arial', 'sans-serif']
       },
+      gridTemplateColumns: {
+        'commands': '1fr 1fr'
+      }
     },
   },
   plugins: [
