@@ -24,7 +24,7 @@ function Dashboard() {
       }
 
       if (e.key === 'k' && e.metaKey && e.shiftKey) {
-        jsConfetti.addConfetti({ confettiColors: ['#8be9fd', '#50fa7b', '#ff5555', 'pink', 'purple'] })
+        jsConfetti.addConfetti({ confettiColors: ['#8be9fd', '#50fa7b', '#ff5555', '#ff79c6', '#bd93f9', '#f1fa8c'] })
       }
     };
 
