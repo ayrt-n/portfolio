@@ -12,7 +12,7 @@ function Directroy({ directory, callback }) {
   const paddingLeft = `${level * 10}px`
   const marginLeft = `${(level + 1) * 10}px`
 
-  const defaultClasses = "w-full py-1"
+  const defaultClasses = "w-full py-1 outline-none focus:shadow-item-selected focus:bg-white-10a focus:z-20 relative"
   const conditionalClasses = level === 0 ? "bg-dark-500 font-bold uppercase" : "hover:bg-dark-400 font-medium"
   const mergedClasses = classNames(defaultClasses, conditionalClasses);
 

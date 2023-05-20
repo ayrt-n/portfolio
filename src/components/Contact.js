@@ -3,6 +3,7 @@ import MarkdownHeader from './MarkdownHeader';
 import LineBreak from './LineBreak';
 import Section from './Section';
 import Text from './Text';
+import MarkdownLink from './MarkdownLink';
 
 function Contact() {
   return (
@@ -17,13 +18,13 @@ function Contact() {
 
       <Section>
         <Text className="text-lg">
-          [<span className="text-pink">Email</span>] (<a href="mailto:Ayrton.Parkinson1@gmail.com" className="underline text-blue hover:bg-blue-highlight">mailto:ayrton.parkinson1@gmail.com</a>)
+          [<span className="text-pink">Email</span>] (<MarkdownLink href="mailto:ayrton.parkinson1@gmail.com">mailto:ayrton.parkinson1@gmail.com</MarkdownLink>)
         </Text>
         <Text className="text-lg">
-          [<span className="text-pink">Github</span>] (<a href="https://github.com/ayrt-n" target="_blank" rel="noreferrer" className="underline text-blue hover:bg-blue-highlight">https://github.com/ayrt-n</a>)
+          [<span className="text-pink">Github</span>] (<MarkdownLink href="https://github.com/ayrt-n">https://github.com/ayrt-n</MarkdownLink>)
         </Text>
         <Text className="text-lg">
-          [<span className="text-pink">LinkedIn</span>] (<a href="https://www.linkedin.com/in/ayrton-parkinson-ab6015ba/" target="_blank" rel="noreferrer" className="underline text-blue hover:bg-blue-highlight">https://www.linkedin.com/in/ayrton-parkinson-ab6015ba/</a>)
+          [<span className="text-pink">LinkedIn</span>] (<MarkdownLink href="https://www.linkedin.com/in/ayrton-parkinson-ab6015ba/">https://www.linkedin.com/in/ayrton-parkinson-ab6015ba/</MarkdownLink>)
         </Text>
       </Section>
     </div>

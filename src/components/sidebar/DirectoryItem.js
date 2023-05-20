@@ -15,7 +15,8 @@ function DirectoryItem({ item, callback }) {
     if (callback) { callback() }
   };
 
-  const itemClass = classNames("hover:bg-dark-400 py-1 font-medium block w-full", { 'bg-dark-400' : selected });
+  const defaultClasses = "hover:bg-dark-400 py-1 font-medium block w-full outline-none focus:shadow-item-selected focus:z-20 relative";
+  const itemClass = classNames(defaultClasses, { 'bg-dark-400' : selected, 'focus:bg-white-10a': !selected });
 
   return (
     <button onClick={handleClick} className={itemClass} style={{paddingLeft: paddingLeft}}>

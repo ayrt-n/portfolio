@@ -4,7 +4,7 @@ import React from 'react';
 function MarkdownButton({ as, children, className, ...props }) {
   const ButtonTag = as || 'button';
 
-  const defaultClasses = 'font-bold text-green hover:bg-green-highlight';
+  const defaultClasses = 'font-bold text-green hover:bg-green-highlight outline-none focus:bg-green-highlight';
   const mergedClasses = classNames(defaultClasses, className);
 
   return (

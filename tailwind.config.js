@@ -15,7 +15,10 @@ module.exports = {
         'dark-100': '#5A6795',
         'comment': '#6272a4',
         'white': '#F8F8F2',
+        'white-75a': 'hsla(0,0%,100%,.75)',
         'white-50a': 'hsla(0,0%,100%,.5)',
+        'white-10a': 'hsla(0,0%,100%,.1)',
+        'white-5a': 'hsla(0,0%,100%,.05)',
         'blue': '#8be9fd',
         'blue-highlight': 'rgba(139, 233, 253, 0.25)',
         'lightGreen': '#b1ffc5',
@@ -51,6 +54,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         'commands': '1fr 1fr'
+      },
+      boxShadow: {
+        'item-selected': '0 0 0 1px #4a57e4'
       }
     },
   },

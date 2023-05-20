@@ -8,8 +8,8 @@ function Drawer({ isOpen, toggle, children }) {
       <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
       <div className="fixed inset-0 flex">
         <Dialog.Panel className="bg-dark-600 group fixed inset-y-0 select-none w-[300px]">
-          <button onClick={toggle} className="min-h-[50px] min-w-[50px] bg-dark-600 flex items-center px-3 md:hidden block">
-            <Bars3Icon className="text-white-50a w-6 h-6" />
+          <button onClick={toggle} className="min-h-[50px] min-w-[50px] bg-dark-600 flex items-center px-3 md:hidden block group outline-none">
+            <Bars3Icon className="text-white-50a w-6 h-6 group-focus:text-white-75a" />
           </button>
           {children}
         </Dialog.Panel>

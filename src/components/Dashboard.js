@@ -37,8 +37,8 @@ function Dashboard() {
     <div className="font-sans h-screen max-w-screen flex overflow-y-hidden">
       {/* Desktop Sidebar */}
       <div className="md:block hidden bg-dark-600">
-        <button onClick={toggleSidebar} className="min-h-[50px] min-w-[50px] bg-dark-600 flex items-center px-3">
-          <Bars3Icon className="text-white-50a w-6 h-6" />
+        <button onClick={toggleSidebar} className="min-h-[50px] min-w-[50px] bg-dark-600 flex items-center px-3 outline-none group">
+          <Bars3Icon className="text-white-50a w-6 h-6 group-focus:text-white-75a" />
         </button>
         <Sidebar open={sidebarOpen}>
           <DirectoryList directory={directory} />
