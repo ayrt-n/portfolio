@@ -16,14 +16,13 @@ function Dashboard() {
   const [sidebarOpen, toggleSidebar] = useToggle(true);
 
   useEffect(() => {
-    const jsConfetti = new JSConfetti();
-
     const keyboardShortcuts = (e) => {
       if (e.key === 'b' && e.metaKey) {
         window.innerWidth < 768 ? toggleDrawer() : toggleSidebar();
       }
 
       if (e.key === 'k' && e.metaKey && e.shiftKey) {
+        const jsConfetti = new JSConfetti();
         jsConfetti.addConfetti({ confettiColors: ['#8be9fd', '#50fa7b', '#ff5555', '#ff79c6', '#bd93f9', '#f1fa8c'] })
       }
     };
