@@ -28,7 +28,7 @@ function Directroy({ directory, callback }) {
           </Disclosure.Button>
           <Disclosure.Panel className="relative">
             <LevelContext.Provider value={level + 1}>
-              {level > 0 && <div className="absolute z-10 border-l border-l-transparent h-full group-hover:border-l-dark-200 transition-colors" style={{marginLeft: marginLeft}} />}
+              {level > 0 && <div className="absolute z-30 border-l border-l-transparent h-full group-hover:border-l-dark-200 transition-colors" style={{marginLeft: marginLeft}} />}
               <DirectoryList directory={directory.children} callback={callback} />
             </LevelContext.Provider>
           </Disclosure.Panel>
