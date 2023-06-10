@@ -1,8 +1,8 @@
 import React from 'react';
 
-function ProjectPreview() {
+function ProjectPreview({ src, alt, ...props }) {
   return (
-    <div className="max-w-[400px] bg-red w-full h-[200px] max-h-[50%]" />
+    <img className="max-w-[450px] w-full h-auto max-h-[50%] rounded shadow-project" src={src} alt={alt} {...props} />
   );
 }
 

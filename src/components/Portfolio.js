@@ -7,6 +7,10 @@ import Link from './Link';
 import Project from './portfolio/Project';
 import ProjectText from './portfolio/ProjectText';
 import ProjectPreview from './portfolio/ProjectPreview';
+import invesdditPrev from '../assets/images/portfolio/invesddit-1.png';
+import taasskkrrPrev from '../assets/images/portfolio/taasskkrr-1.png';
+import inventoryPrev from '../assets/images/portfolio/inventory-tracker-1.png';
+import chessPrev from '../assets/images/portfolio/chess-1.png';
 
 function Portfolio() {
   return (
@@ -28,7 +32,7 @@ function Portfolio() {
             githubLink="https://github.com/ayrt-n/invesddit"
             liveLink="https://ayrt-n.github.io/invesddit/"
           />
-          <ProjectPreview />
+          <ProjectPreview src={invesdditPrev} alt="screenshot of invesddit homepage" />
         </Project>
       </Section>
 
@@ -41,7 +45,7 @@ function Portfolio() {
             githubLink="https://github.com/ayrt-n/taasskkrr"
             liveLink="https://ayrt-n.github.io/taasskkrr"
           />
-          <ProjectPreview />
+          <ProjectPreview src={taasskkrrPrev} alt="screenshot of taasskkrr homepage" />
         </Project>
       </Section>
 
@@ -53,7 +57,7 @@ function Portfolio() {
             description="Full stack inventory tracking and management web application. Application allows users to create, update, and delete inventory and shipments to easily track outstanding shipments and remaining inventory."
             githubLink="https://github.com/ayrt-n/inventory-tracking-web-app"
           />
-          <ProjectPreview />
+          <ProjectPreview src={inventoryPrev} alt="screenshot of inventory tracker web application" />
         </Project>
       </Section>
 
@@ -65,7 +69,7 @@ function Portfolio() {
             description="Fully developed game of chess using Ruby, played through the command-line. Number of quality-of-life features implemented, including selecting and viewing all moves, and ability to save/load games."
             githubLink="https://github.com/ayrt-n/ruby-chess"
           />
-          <ProjectPreview />
+          <ProjectPreview src={chessPrev} alt="screenshot of game of chess being played in command line" />
         </Project>
       </Section>
     </div>

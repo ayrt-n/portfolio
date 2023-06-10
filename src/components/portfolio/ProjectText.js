@@ -7,7 +7,7 @@ import MarkdownButton from '../MarkdownButton';
 
 function ProjectText({ title, technologies, description, githubLink, liveLink }) {
   return (
-    <Section className="max-w-[400px]">
+    <Section className="max-w-[450px]">
       <MarkdownHeader headingLevel="2" text={title} className="text-xl md:text-3xl mb-3" />
       <Comment>{technologies}</Comment>
       <Text>{description}</Text>
