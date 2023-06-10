@@ -56,7 +56,8 @@ module.exports = {
         'commands': '1fr 1fr'
       },
       boxShadow: {
-        'item-selected': '0 0 0 1px #4a57e4'
+        'item-selected': '0 0 0 1px #4a57e4',
+        'project': 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',
       }
     },
   },
