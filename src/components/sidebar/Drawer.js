@@ -4,7 +4,7 @@ import { Dialog } from '@headlessui/react';
 
 function Drawer({ isOpen, toggle, children }) {
   return (
-    <Dialog open={isOpen} onClose={toggle} as="div" className="relative z-50">
+    <Dialog open={isOpen} onClose={toggle} as="div" className="relative z-50 md:hidden">
       <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
       <div className="fixed inset-0 flex">
         <Dialog.Panel className="bg-dark-600 group fixed inset-y-0 select-none w-[300px]">

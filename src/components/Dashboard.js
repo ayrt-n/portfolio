@@ -45,11 +45,9 @@ function Dashboard() {
       </div>
 
       {/* Mobile drawer */}
-      <div className="md:hidden block">
-        <Drawer isOpen={drawerOpen} toggle={toggleDrawer}>
-          <DirectoryList directory={directory} callback={toggleDrawer} />
-        </Drawer>
-      </div>
+      <Drawer isOpen={drawerOpen} toggle={toggleDrawer}>
+        <DirectoryList directory={directory} callback={toggleDrawer} />
+      </Drawer>
       
       {/* Main content and navbar */}
       <div className="grow">
