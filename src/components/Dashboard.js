@@ -53,7 +53,9 @@ function Dashboard() {
       
       {/* Main content and navbar */}
       <div className="grow">
-        <Navbar toggleDrawer={toggleDrawer} />
+        <div className="max-w-[100vw]">
+          <Navbar toggleDrawer={toggleDrawer} />
+        </div>
         {tabs.current ?
           <div className="font-mono pt-[32px] pb-[48px] px-4 md:px-9 overflow-y-auto h-full">
             <div className="max-w-[1200px]">
