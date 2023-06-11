@@ -1,4 +1,5 @@
 import React from 'react';
+import LineBreak from './LineBreak';
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
         A Full Stack Software Engineer from Canada
         <span className="animate-blink">|</span>
       </h2>
-      <hr className="border-dark-200 my-3" />
+      <LineBreak />
     </div>
   )
 }
