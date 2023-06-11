@@ -50,7 +50,7 @@ function Dashboard() {
       </Drawer>
       
       {/* Main content and navbar */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col w-full">
         <div className="max-w-[100vw]">
           <Navbar toggleDrawer={toggleDrawer} />
         </div>
