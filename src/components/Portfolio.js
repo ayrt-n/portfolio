@@ -53,7 +53,7 @@ function Portfolio() {
         <Project>
           <ProjectText
             title="Inventory Tracker"
-            technologies="Ruby on Rails, React, JavaScript"
+            technologies="Ruby on Rails, JavaScript"
             description="Full stack inventory tracking and management web application. Application allows users to create, update, and delete inventory and shipments to easily track outstanding shipments and remaining inventory."
             githubLink="https://github.com/ayrt-n/inventory-tracking-web-app"
           />
