@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0cd8312b.css",
-    "main.js": "/portfolio/static/js/main.d55b2150.js",
+    "main.js": "/portfolio/static/js/main.92159a4c.js",
     "static/media/inventory-tracker-1.png": "/portfolio/static/media/inventory-tracker-1.aaf0afe9a2750e946fb7.png",
     "static/media/invesddit-1.png": "/portfolio/static/media/invesddit-1.234ecec1ca6357ee2906.png",
     "static/media/Menlo-Regular.ttf": "/portfolio/static/media/Menlo-Regular.92e41f43900c256f2286.ttf",
@@ -12,6 +12,7 @@
     "static/media/Ayrton_Parkinson_CV.pdf": "/portfolio/static/media/Ayrton_Parkinson_CV.9822e67f6c3b0aa24a5c.pdf",
     "static/media/taasskkrr-1.png": "/portfolio/static/media/taasskkrr-1.514cfe296349efa633eb.png",
     "static/media/ap_code_icon.png": "/portfolio/static/media/ap_code_icon.d43d9742b9826c5785c6.png",
+    "static/media/gitignore-1.jpeg": "/portfolio/static/media/gitignore-1.c6763e27a0e5aeeb7d88.jpeg",
     "static/media/info.svg": "/portfolio/static/media/info.fb8a230a04dd8202421fc9f7c026c22b.svg",
     "index.html": "/portfolio/index.html",
     "static/media/git_ignore.svg": "/portfolio/static/media/git_ignore.d3a3709c640a9036460f430b1c897182.svg",
@@ -22,10 +23,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.ca9e8e7227121ff3a58d1b811296b5e6.svg",
     "static/media/favicon.svg": "/portfolio/static/media/favicon.abebd897f6513296f41cea46eeae1877.svg",
     "main.0cd8312b.css.map": "/portfolio/static/css/main.0cd8312b.css.map",
-    "main.d55b2150.js.map": "/portfolio/static/js/main.d55b2150.js.map"
+    "main.92159a4c.js.map": "/portfolio/static/js/main.92159a4c.js.map"
   },
   "entrypoints": [
     "static/css/main.0cd8312b.css",
-    "static/js/main.d55b2150.js"
+    "static/js/main.92159a4c.js"
   ]
 }
