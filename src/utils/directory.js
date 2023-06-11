@@ -4,6 +4,7 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import IndexCSS from '../components/IndexCSS';
 import Portfolio from '../components/Portfolio';
+import GitIgnore from '../components/GitIgnore';
 
 const directory = [{
   name: 'ayrton_parkinson_portfolio',
@@ -25,7 +26,7 @@ const directory = [{
         { name: 'index', type: 'file', extension: 'css', component: <IndexCSS /> },
       ]
     },
-    { name: '', type: 'file', extension: 'gitignore', component: <></> },
+    { name: ' ', type: 'file', extension: 'gitignore', component: <GitIgnore /> },
     { name: 'Contact', type: 'file', extension: 'md', component: <Contact /> },
   ]
 }];
