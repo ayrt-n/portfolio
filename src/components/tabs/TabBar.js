@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Tab from './Tab';
 import useTabContext from '../../hooks/useTabContext';
 
 function TabBar() {
   const tabs = useTabContext();
+  const selectedTab = tabs.current ? tabs.current.name : null
+  
+  useEffect(() => {
+    if (selectedTab) {
+      const tab = document.querySelector(`[data-tab="${selectedTab}"]`);
+      tab.scrollIntoView();
+    }
+  }, [selectedTab]);
 
   if (tabs.tabList.length < 1) return;
 

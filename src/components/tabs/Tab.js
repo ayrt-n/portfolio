@@ -9,10 +9,10 @@ function Tab({ tab }) {
 
   const defaultClasses = "relative min-w-[175px] px-4 mr-[2px] h-full flex justify-center items-center border-t-2 border-transparent focus-within:bg-dark-500";
   const selectedClasses = { 'border-t-pink': selected, 'bg-dark-500': selected, 'bg-dark-600': !selected };
-  const mergedClasses = classNames(defaultClasses, selectedClasses)
+  const mergedClasses = classNames(defaultClasses, selectedClasses);
 
   return (
-    <span className={mergedClasses}>
+    <span className={mergedClasses} data-tab={`${tab.name}`}>
       <button onClick={() => tabs.switchTabs(tab)} className="absolute top-0 left-0 bottom-0 right-0 h-full w-full outline-none" />
       <File name={tab.name} extension={tab.extension} />
       <button onClick={() => tabs.removeTab(tab)} className="z-10 ml-2 rounded-md p-1 hover:bg-dark-400 active:bg-dark-300 focus:bg-dark-400 outline-none">
