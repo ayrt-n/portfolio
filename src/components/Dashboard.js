@@ -33,7 +33,7 @@ function Dashboard() {
   }, [toggleSidebar, toggleDrawer]);
 
   return (
-    <div className="font-sans h-screen flex overflow-hidden">
+    <div className="font-sans min-h-screen h-full md:h-screen flex overflow-hidden">
       {/* Desktop Sidebar */}
       <div className="md:block hidden bg-dark-600">
         <button onClick={toggleSidebar} className="min-h-[50px] min-w-[50px] bg-dark-600 flex items-center px-3 outline-none group">
@@ -50,7 +50,7 @@ function Dashboard() {
       </Drawer>
       
       {/* Main content and navbar */}
-      <div className="flex-1 flex flex-col w-full overflow-hidden">
+      <div className="flex-1 flex flex-col w-full overflow-hidden mt-[50px] md:mt-0">
         <Navbar toggleDrawer={toggleDrawer} />
         
         {tabs.current ?
