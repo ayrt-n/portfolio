@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.909eec7f.css",
-    "main.js": "/static/js/main.5b8c9395.js",
+    "main.js": "/static/js/main.8040d05b.js",
     "static/media/Menlo-Regular.ttf": "/static/media/Menlo-Regular.92e41f43900c256f2286.ttf",
     "static/media/SF-Pro-Display-Medium.otf": "/static/media/SF-Pro-Display-Medium.b85d841dacb040b84951.otf",
     "static/media/SF-Pro-Display-Bold.otf": "/static/media/SF-Pro-Display-Bold.b1f4d2c69fa808ebca12.otf",
@@ -23,10 +23,10 @@
     "static/media/html.svg": "/static/media/html.ca9e8e7227121ff3a58d1b811296b5e6.svg",
     "static/media/favicon.svg": "/static/media/favicon.abebd897f6513296f41cea46eeae1877.svg",
     "main.909eec7f.css.map": "/static/css/main.909eec7f.css.map",
-    "main.5b8c9395.js.map": "/static/js/main.5b8c9395.js.map"
+    "main.8040d05b.js.map": "/static/js/main.8040d05b.js.map"
   },
   "entrypoints": [
     "static/css/main.909eec7f.css",
-    "static/js/main.5b8c9395.js"
+    "static/js/main.8040d05b.js"
   ]
 }
