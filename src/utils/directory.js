@@ -6,6 +6,13 @@ import IndexCSS from '../components/IndexCSS';
 import Portfolio from '../components/Portfolio';
 import GitIgnore from '../components/GitIgnore';
 
+const about = { name: 'About', type: 'file', extension: 'js', component: <About /> }
+const portfolio = { name: 'Portfolio', type: 'file', extension: 'js', component: <Portfolio /> }
+const home = { name: 'Home', type: 'file', extension: 'js', component: <Home /> }
+const index = { name: 'index', type: 'file', extension: 'css', component: <IndexCSS /> }
+const gitignore = { name: ' ', type: 'file', extension: 'gitignore', component: <GitIgnore /> }
+const contact = { name: 'Contact', type: 'file', extension: 'md', component: <Contact /> }
+
 const directory = [{
   name: 'ayrton_parkinson_portfolio',
   type: 'folder',
@@ -18,17 +25,25 @@ const directory = [{
           name: 'components',
           type: 'folder',
           children: [
-            { name: 'About', type: 'file', extension: 'js', component: <About /> },
-            { name: 'Portfolio', type: 'file', extension: 'js', component: <Portfolio /> },
+            about,
+            portfolio,
           ]
         },
-        { name: 'Home', type: 'file', extension: 'js', component: <Home /> },
-        { name: 'index', type: 'file', extension: 'css', component: <IndexCSS /> },
+        home,
+        index,
       ]
     },
-    { name: ' ', type: 'file', extension: 'gitignore', component: <GitIgnore /> },
-    { name: 'Contact', type: 'file', extension: 'md', component: <Contact /> },
+    gitignore,
+    contact,
   ]
 }];
 
-export { directory }
+export {
+  about,
+  portfolio,
+  home,
+  index,
+  gitignore,
+  contact,
+  directory
+};
