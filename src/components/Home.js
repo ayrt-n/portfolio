@@ -45,7 +45,7 @@ function Home() {
         </div>
         <div>
           <TabLink tab={portfolio} className="text-[#0078D7] font-normal">Portfolio</TabLink>
-          <span className="ml-5">~/work_experience_and_achievments</span>
+          <span className="ml-5">~/work_experience_and_achievements</span>
         </div>
         <div>
           <TabLink tab={contact} className="text-[#0078D7] font-normal">Contact</TabLink>
