@@ -32,6 +32,7 @@ module.exports = {
         'pink': '#ff79c6',
         'yellow': '#f1fa8c',
         'purple': '#bd93f9',
+        'link': '#0078D7',
         'cta': '#5865F2',
         'ctaDark': '#4a57e4',
         'ctaLight': '#6470f3',
