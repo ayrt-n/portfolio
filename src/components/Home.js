@@ -40,15 +40,15 @@ function Home() {
           Helpful Links
         </h3>
         <div>
-          <TabLink tab={about} className="text-[#0078D7] font-normal">About</TabLink>
+          <TabLink tab={about} className="text-link font-normal">About</TabLink>
           <span className="ml-5">~/background_information</span>
         </div>
         <div>
-          <TabLink tab={portfolio} className="text-[#0078D7] font-normal">Portfolio</TabLink>
+          <TabLink tab={portfolio} className="text-link font-normal">Portfolio</TabLink>
           <span className="ml-5">~/work_experience_and_achievements</span>
         </div>
         <div>
-          <TabLink tab={contact} className="text-[#0078D7] font-normal">Contact</TabLink>
+          <TabLink tab={contact} className="text-link font-normal">Contact</TabLink>
           <span className="ml-5">~/lets_chat</span>
         </div>
       </Section>

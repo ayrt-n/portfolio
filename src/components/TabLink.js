@@ -1,11 +1,7 @@
 import React from 'react';
 import useTabContext from '../hooks/useTabContext';
-import classNames from 'classnames';
 
 function TabLink({ tab, className, children }) {
-  const defaultClasses = "font-bold text-yellow"
-  const mergedClasses = classNames(defaultClasses, className);
-
   const tabs = useTabContext();
 
   const handleClick = () => {
@@ -13,7 +9,7 @@ function TabLink({ tab, className, children }) {
   };
 
   return (
-    <button onClick={handleClick} className={mergedClasses}>
+    <button onClick={handleClick} className={className}>
       {children}
     </button>
   );
