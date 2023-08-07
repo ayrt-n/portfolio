@@ -18,7 +18,6 @@ function Dashboard() {
 
   // Reset Tab Component scroll when tab changes
   useEffect(() => {
-    console.log('hi');
     if (tabRef.current) {
       tabRef.current.scrollTo({ top: 0, behaviour: 'smooth' });
     }
