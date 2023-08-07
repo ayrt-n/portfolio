@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Sidebar from './sidebar/Sidebar';
 import NoTabs from './NoTabs';
 import useTabContext from '../hooks/useTabContext';
@@ -12,9 +12,19 @@ import JSConfetti from 'js-confetti';
 
 function Dashboard() {
   const tabs = useTabContext();
+  const tabRef = useRef(null);
   const [drawerOpen, toggleDrawer] = useToggle(false);
   const [sidebarOpen, toggleSidebar] = useToggle(true);
 
+  // Reset Tab Component scroll when tab changes
+  useEffect(() => {
+    console.log('hi');
+    if (tabRef.current) {
+      tabRef.current.scrollTo({ top: 0, behaviour: 'smooth' });
+    }
+  }, [tabs]);
+
+  // Keyboard shortcut listeners
   useEffect(() => {
     const keyboardShortcuts = (e) => {
       if (e.key === 'b' && e.metaKey) {
@@ -54,7 +64,7 @@ function Dashboard() {
         <Navbar toggleDrawer={toggleDrawer} />
         
         {tabs.current ?
-          <div className="font-mono pt-[32px] pb-[100px] px-4 md:px-9 overflow-y-auto flex-1">
+          <div ref={tabRef} className="font-mono pt-[32px] pb-[100px] px-4 md:px-9 overflow-y-auto flex-1">
             <div className="max-w-[1200px]">
               {tabs.current.component}
             </div>
