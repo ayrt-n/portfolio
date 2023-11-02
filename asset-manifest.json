@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e914a768.css",
-    "main.js": "/static/js/main.9a3df6c0.js",
+    "main.js": "/static/js/main.bc6311db.js",
     "static/media/Menlo-Regular.ttf": "/static/media/Menlo-Regular.92e41f43900c256f2286.ttf",
     "static/media/SF-Pro-Display-Medium.otf": "/static/media/SF-Pro-Display-Medium.b85d841dacb040b84951.otf",
     "static/media/SF-Pro-Display-Bold.otf": "/static/media/SF-Pro-Display-Bold.b1f4d2c69fa808ebca12.otf",
@@ -12,7 +12,6 @@
     "static/media/inventory-tracker-1.png": "/static/media/inventory-tracker-1.af381947a4fec9fbdf2b.png",
     "static/media/taasskkrr-1.png": "/static/media/taasskkrr-1.13abc1354be85642ce06.png",
     "static/media/ap_code_icon.png": "/static/media/ap_code_icon.d43d9742b9826c5785c6.png",
-    "static/media/gitignore-1.jpeg": "/static/media/gitignore-1.c6763e27a0e5aeeb7d88.jpeg",
     "static/media/info.svg": "/static/media/info.fb8a230a04dd8202421fc9f7c026c22b.svg",
     "index.html": "/index.html",
     "static/media/git_ignore.svg": "/static/media/git_ignore.d3a3709c640a9036460f430b1c897182.svg",
@@ -23,10 +22,10 @@
     "static/media/html.svg": "/static/media/html.ca9e8e7227121ff3a58d1b811296b5e6.svg",
     "static/media/favicon.svg": "/static/media/favicon.abebd897f6513296f41cea46eeae1877.svg",
     "main.e914a768.css.map": "/static/css/main.e914a768.css.map",
-    "main.9a3df6c0.js.map": "/static/js/main.9a3df6c0.js.map"
+    "main.bc6311db.js.map": "/static/js/main.bc6311db.js.map"
   },
   "entrypoints": [
     "static/css/main.e914a768.css",
-    "static/js/main.9a3df6c0.js"
+    "static/js/main.bc6311db.js"
   ]
 }
