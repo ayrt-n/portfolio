@@ -34,7 +34,7 @@ function About() {
           While these are some of the languages I am the most comfortable with, I am constantly looking to expand my toolkit and am open to working with and learning new skills!
         </Comment>
         <Text>
-          <span className="font-bold text-pink">Languages and Frameworks:</span> Ruby, Ruby on Rails, Python, GraphQL, SQL, React, JavaScript, HTML, CSS, Tailwind
+          <span className="font-bold text-pink">Languages and Frameworks:</span> Ruby, Ruby on Rails, Python, Java, GraphQL, SQL, React, JavaScript, HTML, CSS
         </Text>
         <Text>
           <span className="font-bold text-pink">Miscellaneous:</span> Git, Webpack, Object-Oriented Programming and Design, Test-Driven Development, Data Structures and Algorithms, Full Stack Web Development, REST APIs, Amazon S3
