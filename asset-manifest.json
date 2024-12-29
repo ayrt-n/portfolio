@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e914a768.css",
-    "main.js": "/static/js/main.7f2d6bb1.js",
+    "main.js": "/static/js/main.0992a3c9.js",
+    "static/media/sudoku-solver-1.png": "/static/media/sudoku-solver-1.07554a542bf294da5962.png",
     "static/media/Menlo-Regular.ttf": "/static/media/Menlo-Regular.92e41f43900c256f2286.ttf",
     "static/media/SF-Pro-Display-Medium.otf": "/static/media/SF-Pro-Display-Medium.b85d841dacb040b84951.otf",
     "static/media/SF-Pro-Display-Bold.otf": "/static/media/SF-Pro-Display-Bold.b1f4d2c69fa808ebca12.otf",
@@ -22,10 +23,10 @@
     "static/media/html.svg": "/static/media/html.ca9e8e7227121ff3a58d1b811296b5e6.svg",
     "static/media/favicon.svg": "/static/media/favicon.abebd897f6513296f41cea46eeae1877.svg",
     "main.e914a768.css.map": "/static/css/main.e914a768.css.map",
-    "main.7f2d6bb1.js.map": "/static/js/main.7f2d6bb1.js.map"
+    "main.0992a3c9.js.map": "/static/js/main.0992a3c9.js.map"
   },
   "entrypoints": [
     "static/css/main.e914a768.css",
-    "static/js/main.7f2d6bb1.js"
+    "static/js/main.0992a3c9.js"
   ]
 }
