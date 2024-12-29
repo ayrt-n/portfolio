@@ -11,6 +11,7 @@ import invesdditPrev from '../assets/images/portfolio/invesddit-1.png';
 import taasskkrrPrev from '../assets/images/portfolio/taasskkrr-1.png';
 import inventoryPrev from '../assets/images/portfolio/inventory-tracker-1.png';
 import chessPrev from '../assets/images/portfolio/chess-1.png';
+import sudokuPrev from '../assets/images/portfolio/sudoku-solver-1.png'
 
 function Portfolio() {
   return (
@@ -21,6 +22,18 @@ function Portfolio() {
         <Text>
           Below is a selection of some recent and larger projects that I have worked on. For more detail on everything that I have done, as well as what I am currently working on, check out my GitHub at <Link targetBlank href="https://github.com/ayrt-n">https://github.com/ayrt-n</Link>
         </Text>
+      </Section>
+
+      <Section>
+        <Project>
+          <ProjectText
+            title="Python Sudoku Solver"
+            technologies="Python, OpenCV"
+            description="A python sudoku solver which is able to convert images of sudoku boards into array representations and then solve them using a constraint propagation algorithm and backtracking."
+            githubLink="https://github.com/ayrt-n/python-sudoku-solver"
+          />
+          <ProjectPreview src={sudokuPrev} alt="screenshot of sudoku solver" />
+        </Project>
       </Section>
 
       <Section>
