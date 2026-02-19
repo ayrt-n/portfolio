@@ -7,6 +7,7 @@ import Link from './Link';
 import Project from './portfolio/Project';
 import ProjectText from './portfolio/ProjectText';
 import ProjectPreview from './portfolio/ProjectPreview';
+import chessAiPrev from '../assets/images/portfolio/chess-ai-1.png';
 import invesdditPrev from '../assets/images/portfolio/invesddit-1.png';
 import taasskkrrPrev from '../assets/images/portfolio/taasskkrr-1.png';
 import inventoryPrev from '../assets/images/portfolio/inventory-tracker-1.png';
@@ -22,6 +23,18 @@ function Portfolio() {
         <Text>
           Below is a selection of some recent and larger projects that I have worked on. For more detail on everything that I have done, as well as what I am currently working on, check out my GitHub at <Link targetBlank href="https://github.com/ayrt-n">https://github.com/ayrt-n</Link>
         </Text>
+      </Section>
+
+      <Section>
+        <Project>
+          <ProjectText
+            title="AI-Powered Chess Game Analysis Tool"
+            technologies="Java, Spring Boot, TypeScript, React, Python"
+            description="A chess game analysis application that evaluates your games move-by-move using Stockfish and generates AI-powered feedback — similar to the game review features on Chess.com or Lichess."
+            githubLink="https://github.com/ayrt-n/chess-review"
+          />
+          <ProjectPreview src={chessAiPrev} alt="screenshot of sudoku solver" />
+        </Project>
       </Section>
 
       <Section>

@@ -22,10 +22,7 @@ function Home() {
 
       <Section>
         <Text>
-          Experienced using Ruby, Ruby on Rails, Python, JavaScript, React, and more!
-        </Text>
-        <Text>
-          This website, inspired by <Link targetBlank href="https://code.visualstudio.com/">VS Code</Link>, is an interactive overview of who I am and some the things that I've built. I encourage visitors to click around and explore (the sidebar and tabs at the top are fully functioning).
+          Experienced using Ruby, Java, Python, TypeScript, React, and more!
         </Text>
         <Text>
           For more information on my background and previous work, check out some of the helpful links below!
